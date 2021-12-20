@@ -1,0 +1,21 @@
+main.m
+-- This is the main file, used to load data, perform estimation, simulate the system and plot
+
+estimate.m 
+-- This file is called by main.m. It performs the estimation of parameters by using lsqcurvefit built-in Matlab function.
+
+simode.m 
+-- This file is used to simulate the model by solving the corresponding set of differential equations with ode45 built-in Matlab function.
+
+model.m
+-- This file evaluates the right hand side of the differential equations composing the model
+
+downloadItalianCovidData.m
+-- This file downloads the data from the GitHub account of Protezione Civile Italiana
+
+setParameter.m
+-- This file is used to set the parameters type (constant and known, constant and unknown, time-varying and unknown), lower bound, upped bound and initial guess for the estimation.
+ 
+getParameter.m
+-- This file is used to read the estimated values of the parameters.
+
